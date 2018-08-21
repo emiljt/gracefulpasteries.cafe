@@ -1,56 +1,29 @@
-<nav>
-  <ul>
-    <li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
-    <li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a class="navbar-item" href=".">
+      <img src="svelte-logo-192.png" alt="Graceful Pastries logo" />
+    </a>
 
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-         the blog data when we hover over the link or tap it on a touchscreen -->
-    <li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
-  </ul>
+    <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-start">
+    </div>
+
+    <div class="navbar-end">
+      <a class="navbar-item" href=".">home</a>
+      <a class="navbar-item" href="about">about</a>
+      <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+          the blog data when we hover over the link or tap it on a touchscreen -->
+      <a rel=prefetch class="navbar-item" href="blog">blog</a>
+    </div>
+  </div>
 </nav>
 
 <style>
-  nav {
-    border-bottom: 1px solid rgba(170,30,30,0.1);
-    font-weight: 300;
-    padding: 0 1em;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* clearfix */
-  ul::after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-
-  li {
-    display: block;
-    float: left;
-  }
-
-  .selected {
-    position: relative;
-    display: inline-block;
-  }
-
-  .selected::after {
-    position: absolute;
-    content: '';
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: rgb(170,30,30);
-    display: block;
-    bottom: -1px;
-  }
-
-  a {
-    text-decoration: none;
-    padding: 1em 0.5em;
-    display: block;
-  }
 </style>
