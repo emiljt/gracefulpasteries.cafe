@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build",
+    "build": "npm run build:css && sapper build",
+    "build:css": "node-sass --omit-source-map-url app/sass/global.scss assets/global.css",
     "export": "sapper export",
     "start": "node build",
     "test": ""
@@ -16,6 +17,8 @@
     "sirv": "*"
   },
   "devDependencies": {
+    "bulma": "*",
+    "node-sass": "*",
     "npm-run-all": "*",
     "svelte": "*",
     "svelte-loader": "*",
