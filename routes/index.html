@@ -2,45 +2,25 @@
   <title>Sapper project template</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<Nav segment={child.segment}/>
 
-<figure>
-  <img alt="logo" src='logo.svg'>
-  <figcaption>HIGH FIVE!</figcaption>
-</figure>
+<div class="hero is-marginless">
+  <div class="hero-body is-marginless is-paddingless">
+    <div class="image is-16by9">
+      <img alt="logo on cookie" src='slide_0.png'>
+    </div>
+  </div>
+</div>
 
 <p><strong>Try editing this file (routes/index.html) to test hot module reloading.</strong></p>
 
 <style>
-  h1, figure, p {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
-  }
-
-  figure {
-    margin: 0 0 1em 0;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
-  }
-
-  p {
-    margin: 1em auto;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
-  }
 </style>
+
+<script>
+  export default {
+    components: {
+      Nav: '../components/Nav.html'
+    }
+  };
+</script>
