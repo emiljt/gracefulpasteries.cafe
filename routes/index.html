@@ -3,7 +3,9 @@
 </svelte:head>
 
 <div calss="section">
-  <div class="hero is-fullheight is-slide-0">
+  <div class="hero is-fullheight is-home-slide">
+    <a name="home"></a>
+
     <div class="hero-head">
     </div>
 
@@ -15,10 +17,10 @@
           <div class="column">
             <div class="menu is-large">
               <ul class="menu-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -34,11 +36,81 @@
   </div>
 
   <div class="hero is-fullheight">
+    <a name="about"></a>
+
     <div class="hero-head">
     </div>
 
     <div class="hero-body">
       <div class="container">
+        <p class="title is-slide-title is-fancy">Meet Grace...</p>
+
+        <div class="columns is-centered">
+          <div class="column is-one-fifth">
+            <div class="image is-128x128" style="margin-top: 20px;">
+              <img class="is-rounded" src="grace-256x256.png" />
+            </div>
+          </div>
+
+          <div class="column is-two-fifths">
+            <p class="box">
+                Qui consequuntur qui voluptatem voluptates sunt amet dignissimos nemo.
+                Qui quo adipisci vero rerum non. Voluptas perspiciatis ducimus quia esse doloribus
+                nobis unde iure. Magni dolores perferendis laudantium ipsum vel consequatur nobis
+                ut. Aut vero error optio et labore iure exercitationem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+    </div>
+  </div>
+
+  <div class="hero is-fullheight is-menu-slide">
+    <a name="menu"></a>
+
+    <div class="hero-head">
+    </div>
+
+    <div class="hero-body">
+      <div class="container">
+        <p class="title is-slide-title is-fancy">Menu...</p>
+
+        <div class="columns">
+          <div class="column has-text-weight-bold">
+            <div class="menu is-large">
+              <p class="menu-label">Brownies</p>
+              <ul class="menu-list">
+                <li><a>Bunt Cake</a></li>
+                <li><a>Mini Bunt Cakes</a></li>
+              </ul>
+
+              <p class="menu-label">Cakes</p>
+              <ul class="menu-list">
+                <li><a>Chocolate Brownies</a></li>
+                <li><a>Fudge Brownies</a></li>
+                <li><a>Iced Brownies</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="box">
+                <div class="image is-480x320">
+                  <img src="https://bulma.io/images/placeholders/480x320.png" />
+                </div>
+
+                <p class="card-content">
+                  Commodi consequuntur perferendis laboriosam quo autem ut.
+                  Accusamus ea numquam excepturi dolorem doloremque in. Laboriosam sed quia tenetur
+                  velit sit. Quis placeat est voluptatem est eum eos et facere. Magnam nesciunt quos
+                  molestiae libero et.
+                </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -47,11 +119,29 @@
   </div>
 
   <div class="hero is-fullheight">
+    <a name="order"></a>
+
     <div class="hero-head">
     </div>
 
     <div class="hero-body">
       <div class="container">
+        <p class="title is-slide-title is-fancy">Place an order...</p>
+
+        <div class="columns is-centered">
+          <div class="column is-half">
+              <div class="image is-480x320">
+                <img src="rolling-dough.png" />
+              </div>
+
+              <h2 class="card-content is-size-5">
+                We're quickly baking up a way for you to place orders online.
+                In the mean time, feel free to
+                <a class="has-text-primary" href="#contact">contact us</a>
+                and we'll make sure you're taken care of.
+              </h2>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -59,25 +149,57 @@
     </div>
   </div>
 
-  <div class="hero is-fullheight">
+  <div class="hero is-fullheight is-contact-slide">
+    <a name="contact"></a>
+
     <div class="hero-head">
     </div>
 
     <div class="hero-body">
       <div class="container">
-      </div>
-    </div>
+        <p class="title is-slide-title is-fancy">Drop us a line...</p>
 
-    <div class="hero-foot">
-    </div>
-  </div>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" />
+              </div>
+              <p class="help"></p>
+            </div>
 
-  <div class="hero is-fullheight">
-    <div class="hero-head">
-    </div>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" type="email" />
+              </div>
+              <p class="help"></p>
+            </div>
 
-    <div class="hero-body">
-      <div class="container">
+            <div class="field">
+              <label class="label">Phone</label>
+              <div class="control">
+                <input class="input" type="phone" />
+              </div>
+              <p class="help"></p>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" type="textarea"></textarea>
+              </div>
+              <p class="help"></p>
+            </div>
+
+            <div class="field is-pulled-right">
+              <div class="control">
+                <button class="button is-primary">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -87,18 +209,32 @@
 </div>
 
 <style>
+  .is-fancy {
+    font-family: 'League Script', cursive;
+  }
+
   .is-slide-title {
     margin-bottom: 1em;
     font-size: 4rem;
   }
 
-  .is-fancy {
-    font-family: 'League Script', cursive;
+  .is-home-slide {
+    background-color: white;
+    background-image: url("home-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
   }
 
-  .is-slide-0 {
+  .is-menu-slide {
     background-color: white;
-    background-image: url("slide_0.png");
+    background-image: url("menu-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .is-contact-slide {
+    background-color: white;
+    background-image: url("contact-background.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
