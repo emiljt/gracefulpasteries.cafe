@@ -1,0 +1,27 @@
+{
+  "name": "gracefulpastries.cafe",
+  "description": "TODO",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "sapper dev",
+    "build": "npm run build:css && sapper build",
+    "build:css": "node-sass --omit-source-map-url app/sass/global.scss assets/global.css",
+    "export": "sapper export",
+    "start": "node build",
+    "test": ""
+  },
+  "dependencies": {
+    "compression": "^1.7.1",
+    "polka": "*",
+    "sapper": "*",
+    "sirv": "*"
+  },
+  "devDependencies": {
+    "bulma": "*",
+    "node-sass": "*",
+    "npm-run-all": "*",
+    "svelte": "*",
+    "svelte-loader": "*",
+    "webpack": "*"
+  }
+}

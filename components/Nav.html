@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a class="navbar-item" href=".">
+      <img src="logo.svg" alt="Graceful Pastries logo" width="100" height="100"/>
+    </a>
+
+    <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-start">
+    </div>
+
+    <div class="navbar-end">
+      <a class="navbar-item" href=".">home</a>
+      <a class="navbar-item" href="about">about</a>
+      <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+          the blog data when we hover over the link or tap it on a touchscreen -->
+      <a rel=prefetch class="navbar-item" href="blog">blog</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+</style>

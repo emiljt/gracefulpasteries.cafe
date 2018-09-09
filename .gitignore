@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+
+# Sapper
+.DS_Store
+/.sapper/
+yarn.lock
+/cypress/screenshots/
+/templates/.*
+/export/
+/build/
+/app/manifest/
