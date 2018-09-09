@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div calss="section">
-  <div class="hero is-fullheight is-home-slide">
+  <div class="hero is-fullheight is-home-slide has-background">
     <a name="home"></a>
 
     <div class="hero-head">
@@ -68,7 +68,7 @@
     </div>
   </div>
 
-  <div class="hero is-fullheight is-menu-slide">
+  <div class="hero is-fullheight is-menu-slide has-background">
     <a name="menu"></a>
 
     <div class="hero-head">
@@ -149,7 +149,7 @@
     </div>
   </div>
 
-  <div class="hero is-fullheight is-contact-slide">
+  <div class="hero is-fullheight is-contact-slide has-background">
     <a name="contact"></a>
 
     <div class="hero-head">
@@ -219,24 +219,32 @@
   }
 
   .is-home-slide {
-    background-color: white;
     background-image: url("home-background.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
   }
 
   .is-menu-slide {
-    background-color: white;
     background-image: url("menu-background.png");
+  }
+
+  .is-contact-slide {
+    background-image: url("contact-background.png");
+  }
+
+  .has-background {
+    background-color: white;
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
 
-  .is-contact-slide {
-    background-color: white;
-    background-image: url("contact-background.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  @media (max-width: 600px) and (orientation: portrait) {
+    .is-slide-title {
+      margin-bottom: 1em;
+      font-size: 2rem;
+    }
+
+    .has-background {
+      background-size: unset;
+    }
   }
 </style>
 
