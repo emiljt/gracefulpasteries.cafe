@@ -1,2 +1,2 @@
-# gracefulpasteries.cafe
+# gracefulpastries.cafe
 Website for Graceful Pasteries
